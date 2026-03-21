@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AuthorElevate</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* NAVBAR */
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(15,23,42,0.9);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.nav h2 { color: #fbbf24; }
+
+.nav a {
+  color: #cbd5e1;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: radial-gradient(circle at top, #1e1b4b, #0f172a);
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #7c3aed, #fbbf24);
+  color: white;
+  cursor: pointer;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 15px;
+}
+
+/* LOGOS */
+.logos {
+  text-align: center;
+  opacity: 0.7;
+}
+
+.logos img {
+  width: 80px;
+  margin: 10px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stat-box {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.review {
+  background: #1e293b;
+  padding: 20px;
+  width: 260px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.review img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+/* PLANS */
+.pricing {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: #1e293b;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.price {
+  color: #fbbf24;
+  font-size: 26px;
+}
+
+/* PAYMENT */
+.payment img {
+  width: 40px;
+  margin: 5px;
+}
+
+/* CONTACT BOX */
+.contact-box {
+  text-align: center;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <h2>AuthorElevate</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#plans">Plans</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Your Story Deserves to Be Seen</h1>
+  <p>Promote your book to real readers worldwide</p>
+  <button onclick="contact('Start')">Start Now</button>
+</section>
+
+<!-- TRUST LOGOS -->
+<div class="container logos">
+  <p>Trusted by authors worldwide</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Goodreads_logo.svg">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Google_Play_Books_icon.svg">
+</div>
+
+<!-- STATS -->
+<div class="container">
+  <div class="stats">
+    <div class="stat-box">
+      <h2>1M+</h2>
+      <p>Readers</p>
+    </div>
+    <div class="stat-box">
+      <h2>120K+</h2>
+      <p>Authors Helped</p>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="container">
+  <h2 style="text-align:center;">How Our Promotion Works</h2>
+
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    When you choose a promotion plan, your book is introduced to our active reader community.
+    Readers will access your book through trusted platforms such as Amazon and Goodreads.
+  </p>
+
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    All readers are directed to purchase your book directly from these platforms.
+    If you have your own website, you can provide your custom link for readers.
+  </p>
+
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    Our goal is to increase your book’s visibility, reach real readers, and improve engagement.
+  </p>
+</div>
+
+<!-- PLANS -->
+<div class="container" id="plans">
+  <h2 style="text-align:center;">Promotion Plans</h2>
+
+  <div class="pricing">
+
+    <div class="plan">
+      <h3>Starter</h3>
+      <p class="price">$1,000</p>
+      <p>Reach up to 4,000 readers</p>
+      <p>✔ Amazon & Goodreads promotion</p>
+      <p>✔ 3-week exposure</p>
+      <button onclick="contact('Starter')">Choose</button>
+    </div>
+
+    <div class="plan">
+      <h3>Pro (Most Popular)</h3>
+      <p class="price">$2,100</p>
+      <p>Reach up to 12,000 readers</p>
+      <p>✔ Priority promotion</p>
+      <p>✔ Increased engagement</p>
+      <button onclick="contact('Pro')">Choose</button>
+    </div>
+
+    <div class="plan">
+      <h3>Premium</h3>
+      <p class="price">$3,500</p>
+      <p>Reach up to 55,000 readers</p>
+      <p>✔ Full promotion campaign</p>
+      <p>✔ Maximum visibility</p>
+      <button onclick="contact('Premium')">Choose</button>
+    </div>
+
+  </div>
+
+  <div class="payment" style="text-align:center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg">
+  </div>
+
+  <!-- CONTACT MESSAGE -->
+  <div class="contact-box">
+    <h3>Ready to Promote Your Book?</h3>
+    <p>
+      After selecting your preferred plan, please contact us via email to begin your promotion.
+      We will guide you through the next steps and help you get started immediately.
+    </p>
+
+    <p>You can reach us at:</p>
+
+    <p><strong>authorliftbest@gmail.com</strong></p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 AuthorElevate</p>
+</footer>
+
+<script>
+function contact(plan) {
+  window.location.href =
+    `mailto:authorliftbest@gmail.com?subject=${plan}`;
+}
+</script>
+
+</body>
+</html>
