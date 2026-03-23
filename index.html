@@ -50,55 +50,9 @@ body {
 
 /* CONTAINER */
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 40px 15px;
-}
-
-/* LOGOS */
-.logos {
-  text-align: center;
-  opacity: 0.7;
-}
-
-.logos img {
-  width: 80px;
-  margin: 10px;
-}
-
-/* STATS */
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.stat-box {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 10px;
-  width: 200px;
-  text-align: center;
-}
-
-/* TESTIMONIALS */
-.testimonials {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.review {
-  background: #1e293b;
-  padding: 20px;
-  width: 260px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.review img {
-  width: 60px;
-  border-radius: 50%;
 }
 
 /* PLANS */
@@ -112,7 +66,7 @@ body {
 .plan {
   background: #1e293b;
   padding: 20px;
-  width: 280px;
+  width: 300px;
   border-radius: 10px;
   text-align: center;
 }
@@ -122,10 +76,10 @@ body {
   font-size: 26px;
 }
 
-/* PAYMENT */
-.payment img {
-  width: 40px;
-  margin: 5px;
+/* SECTION TITLE */
+.section-title {
+  text-align:center;
+  margin-bottom: 20px;
 }
 
 /* CONTACT BOX */
@@ -164,50 +118,9 @@ footer {
   <button onclick="contact('Start')">Start Now</button>
 </section>
 
-<!-- TRUST LOGOS -->
-<div class="container logos">
-  <p>Trusted by authors worldwide</p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Goodreads_logo.svg">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Google_Play_Books_icon.svg">
-</div>
-
-<!-- STATS -->
-<div class="container">
-  <div class="stats">
-    <div class="stat-box">
-      <h2>1M+</h2>
-      <p>Readers</p>
-    </div>
-    <div class="stat-box">
-      <h2>120K+</h2>
-      <p>Authors Helped</p>
-    </div>
-  </div>
-</div>
-
-<!-- HOW IT WORKS -->
-<div class="container">
-  <h2 style="text-align:center;">How Our Promotion Works</h2>
-
-  <p style="text-align:center; max-width:700px; margin:auto;">
-    When you choose a promotion plan, your book is introduced to our active reader community.
-    Readers will access your book through trusted platforms such as Amazon and Goodreads.
-  </p>
-
-  <p style="text-align:center; max-width:700px; margin:auto;">
-    All readers are directed to purchase your book directly from these platforms.
-    If you have your own website, you can provide your custom link for readers.
-  </p>
-
-  <p style="text-align:center; max-width:700px; margin:auto;">
-    Our goal is to increase your book’s visibility, reach real readers, and improve engagement.
-  </p>
-</div>
-
-<!-- PLANS -->
+<!-- ORIGINAL PLANS -->
 <div class="container" id="plans">
-  <h2 style="text-align:center;">Promotion Plans</h2>
+  <h2 class="section-title">Promotion Plans</h2>
 
   <div class="pricing">
 
@@ -221,7 +134,7 @@ footer {
     </div>
 
     <div class="plan">
-      <h3>Pro (Most Popular)</h3>
+      <h3>Pro</h3>
       <p class="price">$2,100</p>
       <p>Reach up to 12,000 readers</p>
       <p>✔ Priority promotion</p>
@@ -239,25 +152,76 @@ footer {
     </div>
 
   </div>
+</div>
 
-  <div class="payment" style="text-align:center;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg">
+<!-- NEW SECTION: VERIFIED READERS -->
+<div class="container">
+  <h2 class="section-title">⭐ Verified Readers Review Service</h2>
+  <p style="text-align:center;">Real readers purchase, read, and review your book on Amazon & Goodreads</p>
+
+  <div class="pricing">
+
+    <div class="plan">
+      <h3>1,300 Readers</h3>
+      <p class="price">$600</p>
+      <p>✔ Real purchases</p>
+      <p>✔ Authentic reviews</p>
+      <p>✔ 3 weeks delivery</p>
+      <button onclick="contact('1300 Readers')">Choose</button>
+    </div>
+
+    <div class="plan">
+      <h3>3,000 Readers</h3>
+      <p class="price">$1,000</p>
+      <button onclick="contact('3000 Readers')">Choose</button>
+    </div>
+
+    <div class="plan">
+      <h3>5,000 Readers</h3>
+      <p class="price">$1,800</p>
+      <button onclick="contact('5000 Readers')">Choose</button>
+    </div>
+
+    <div class="plan">
+      <h3>10,000 Readers</h3>
+      <p class="price">$3,500</p>
+      <button onclick="contact('10000 Readers')">Choose</button>
+    </div>
+
   </div>
+</div>
 
-  <!-- CONTACT MESSAGE -->
+<!-- NEW SECTION: FOLLOWERS -->
+<div class="container">
+  <h2 class="section-title">⭐ Social Media Growth</h2>
+  <p style="text-align:center;">Grow real engaged readers across platforms</p>
+
+  <div class="pricing">
+
+    <div class="plan">
+      <h3>20,000 Followers</h3>
+      <p class="price">$2,100</p>
+      <p>✔ Instagram, TikTok, YouTube</p>
+      <p>✔ 2 weeks delivery</p>
+      <button onclick="contact('20k Followers')">Choose</button>
+    </div>
+
+    <div class="plan">
+      <h3>50,000 Followers</h3>
+      <p class="price">$3,500</p>
+      <button onclick="contact('50k Followers')">Choose</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="container">
   <div class="contact-box">
     <h3>Ready to Promote Your Book?</h3>
-    <p>
-      After selecting your preferred plan, please contact us via email to begin your promotion.
-      We will guide you through the next steps and help you get started immediately.
-    </p>
-
-    <p>You can reach us at:</p>
-
+    <p>Email us to begin:</p>
     <p><strong>authorliftbest@gmail.com</strong></p>
   </div>
-
 </div>
 
 <footer>
